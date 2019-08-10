@@ -12,6 +12,7 @@ proc upload_github {path} {
 	send "12236"
 	send \n
 	puts "finish"	
+	interact
 	
 }
 upload_github /home/yfs/jupyter-dir/notebook
