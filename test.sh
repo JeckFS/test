@@ -1,6 +1,7 @@
 #!/usr/bin/expect
 proc upload_github {path} {
 	puts $path
+	set timeout 3
 	exec git add . 
 	exec git commit -m "test"
 	spawn git push origin master
