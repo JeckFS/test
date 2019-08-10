@@ -7,7 +7,7 @@ proc upload_github {path} {
 	spawn git push origin master
 
 	expect "Username for"
-	send JeckFS
+	send JeckFS\n
 	expect "Password for"
 	send 12236.yfs
 
