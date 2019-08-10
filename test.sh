@@ -9,9 +9,8 @@ proc upload_github {path} {
 	expect "Username for"
 	send JeckFS\n
 	expect "Password for"
-	send "12236"
+	send "12236.yfs"
 	send \n
-	puts "finish"	
 	interact
 	
 }
