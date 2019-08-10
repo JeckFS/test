@@ -8,6 +8,7 @@ proc upload_github {path} {
 
 	expect "Username for"
 	send JeckFS\n
+	puts "send JeckFS OK"
 	expect "Password for"
 	send "12236"
 	send \n
