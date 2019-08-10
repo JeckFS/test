@@ -3,7 +3,7 @@ proc upload_github {path} {
 	puts $path
 	exec git add . 
 	exec git commit -m "test"
-	exec git push origin master
+	spawn git push origin master
 
 	expect "Username for"
 	send JeckFS
