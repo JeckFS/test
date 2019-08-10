@@ -6,9 +6,9 @@ proc upload_github {path} {
 	spawn git push origin master
 
 	expect "Username for"
-	puts "ok1"
 	send JeckFS
-	puts "ok2"
+	expect "Password for"
+	send 12236.yfs
 
 }
 upload_github /home/yfs/jupyter-dir/notebook
