@@ -5,7 +5,7 @@ proc upload_github {path} {
 	exec git commit -m "test"
 	exec git push origin master
 
-	expect "Username for 'https://github.com':"
+	expect "Username for"
 	send JeckFS
 
 }
