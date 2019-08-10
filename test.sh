@@ -9,7 +9,8 @@ proc upload_github {path} {
 	expect "Username for"
 	send JeckFS\n
 	expect "Password for"
-	send "12236.yfs\n"
+	send "12236.yfs"
+	send \n
 
 }
 upload_github /home/yfs/jupyter-dir/notebook
