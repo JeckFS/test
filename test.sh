@@ -1,8 +1,7 @@
 #!/usr/bin/expect
 proc upload_github {path} {
-	puts $path
 	set timeout 15 
-	exec git add . 
+	exec git add .
 	exec git commit -m "test"
 	spawn git push origin master
 
@@ -14,4 +13,4 @@ proc upload_github {path} {
 	interact
 	
 }
-upload_github /home/yfs/jupyter-dir/notebook
+upload_github /home/yfs/mytest/t
